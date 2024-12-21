@@ -1,0 +1,776 @@
+:root {
+    --color-primary: red;
+    --color-secondary:  rgba(27, 6, 100, 0.883 );
+    --color-paragraph-text: rgba(0, 0, 0, 0.788);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color:rgba(247, 237, 225, 0.71);
+}
+.menua{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    margin-top: 20px;
+}
+.header{
+    width: 10pc;
+    height: 35px;
+}
+.menua ul{
+    list-style: none;
+    display: flex;
+}
+.menua ul li {
+    padding: 10px 20px;
+    position: relative;
+}
+.menua ul li a{
+    color: rgb(1, 31, 81);
+    font-size: 18.5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    transition: all 0.3s;
+}
+.menua ul li a:hover{
+    color: var(--color-primary);
+}
+.about{
+    display: none;
+    transition: 1s;
+}
+.menua ul li:hover .about{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgba(255, 255, 255, 0.655);
+    display: block;
+}
+.about ul{
+    display: block;
+    margin: 10px;
+}
+.about ul li{
+    width: 150px;
+    padding: 10px;
+}
+.schools{
+    display: none;
+    transition: all 1s;
+}
+.menua ul li:hover .schools{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgb(255, 255, 255, 0.655);
+    display: inline-block;
+    justify-content: space-between;
+}
+.schools ul{
+    display: inline;
+    margin: 10px;
+}
+.schools ul li{
+    width: 200px;
+    padding: 15px;
+}
+.programs{
+    display: none;
+    transition: all 1s;
+}
+.menua ul li:hover .programs{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgb(255, 255, 255, 0.655);
+    display: inline-block;
+    justify-content: space-between;
+}
+.programs ul li{
+    width: 200px;
+    padding: 15px;
+}
+.programs ul{
+    display: block;
+    margin: 10px;
+}
+.enroll{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 7px;
+    border: none;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 70px;
+    margin-left: 20px;
+    height: 3.2pc;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.enroll:hover{
+    background-color:   rgba(27, 6, 100, 0.883 );
+    transition: all 0.5s;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+.welcome{
+    font-size: 75px;
+    font-weight: 1000;
+    color: var(--color-secondary);
+    word-spacing: 1px;
+    line-height: 70px;
+}
+.welcomenote{
+    font-size: 18.5px;
+    word-spacing: 7px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.788);
+    justify-content: space-between;
+    width: 35pc;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 33.5px;
+}
+.illustration_image{
+    width: 40pc;
+    height: 30pc;
+}
+.homebutton{
+    display: flex;
+    margin: 20px;
+    justify-content: left;
+}
+#about{
+    background-color: rgb(255, 0, 4);
+    padding: 9.5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+#enroll{
+    background-color: transparent;
+    padding: 7.5px 12px;
+    border: 2px solid rgba(27, 6, 100, 0.883);
+    border-radius: 2px;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(27, 6, 100, 0.883);
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+}
+#about:hover{
+    background-color: rgba(27, 6, 100, 0.883);
+    transition:all 0.5s;
+}
+#enroll:hover{
+    background-color: rgba(27, 6, 100, 0.883);
+    transition: all 0.5s;
+    color: white;
+    border: 2px solid rgba(247, 237, 225, 0);
+    border-radius: 2px;
+    padding: 7.5px 12px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+}
+#schools{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px 170px;
+}
+.h2schools{
+    font-size: 40px;
+    font-weight: 750;
+    color: var(--color-secondary);
+}
+.schoolsa{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: var(--color-paragraph-text);
+    unicode-bidi: isolate;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 32px;
+}
+.schoolsbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.explore{
+    background-color: rgb(255, 0, 4);
+    padding: 9.5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    text-align: center;
+}
+.faculty{
+    background-color: var(--color-secondary);
+    padding: 7.5px 12px;
+    border-radius: 2px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+    border: none;
+}
+.explore:hover{
+    background-color: rgb(195, 160, 5);
+    transition: 0.2s;
+}
+.faculty:hover{
+    background-color: rgb(252, 46, 0);
+    transition: all 0.2s;
+}
+.session{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessionbox1{
+    border: none;
+    padding: 20px 20px;
+    margin: 20px;
+    display: inline-block;
+    line-height: 20px;
+    width: 30pc;
+    height: 17pc;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3.5px ;
+}
+.sessionbox2{
+    border: none;
+    padding: 20px 20px;
+    margin: 20px;
+    display: inline-block;
+    line-height: 20px;
+    width: 30pc;
+    height: 17pc;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3.5px ;
+}
+.insession{
+    background-color: rgb(252, 46, 0);
+    padding: 7px;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    width: 6pc;
+    height: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 12px;
+}
+.comingsoon{
+    background-color: rgb(122, 122, 122);
+    padding: 7px;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    width: 7pc;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+}
+#sessionheading{
+    color: var(--color-secondary);
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.description{
+    color: var(--color-paragraph-text);
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+}
+.descriptionlink{
+    text-decoration: none;
+    padding-top: 10px;
+    color: var(--color-secondary); 
+    font-size: 20px;
+}
+.descriptionlink:hover{
+    color: var(--color-primary);
+    transition: all 0.2s;
+}
+.programssection{
+    margin-top: 100px;
+}
+.programsheading{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.programsh2{
+    color: var(--color-secondary);
+    font-size: 50px;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+.programsdescription{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: var(--color-paragraph-text);
+    unicode-bidi: isolate;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 32px;
+    padding: 0px 320px;
+    margin-bottom: 30px;
+}
+.programsdescriptionbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#programsdescriptionbox{
+    border: 0.2px solid rgba(0, 0, 0, 0.403);
+    padding: 20px 20px;
+    margin: 20px;
+    display: inline-block;
+    line-height: 20px;
+    width: 30pc;
+    height: 20pc;
+    border-radius: 7px;
+}
+#programsheading{
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    word-spacing: 1px;
+}
+#programsdescription{
+    color: var(--color-paragraph-text);
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+}
+.learnhighlights{
+    display: flex;
+    margin: 24px;
+}
+.learn{
+    background-color: var(--color-primary);
+    padding: 7.5px 12px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+    border: none;
+}
+.learn:hover{
+    background-color: rgb(195, 160, 5);
+    transition: all 0.5s;
+}
+.highlights{
+    color: var(--color-secondary);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.team{
+    background-color: rgb(243, 236, 228);
+    margin-top: 70px;
+}
+.join{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#join{
+    color: var(--color-secondary);
+    font-size: 50px;
+    font-weight: 400px;
+    margin-bottom: 30px;
+}
+.apply{
+    background-color: var(--color-primary);
+    padding: 8.5px 14px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 50px;
+    border: none;
+}
+.apply:hover{
+    background-color: rgb(195, 160, 5);
+    transition: all 0.5s;
+}
+.teamgroup{
+    display: grid;
+    grid-template-columns: repeat(3, 15pc);
+    grid-template-rows: repeat(3, 9pc); 
+    grid-column-gap: 7pc;
+    grid-row-gap: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.teamgrid{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0.2px ;
+    width: 20pc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    
+}
+.teamgrid:hover{
+    box-shadow: 0px 0px 10px 0.2px var(--color-primary) ;
+    transition: 0.3s;
+    border: none;
+}
+.reviewsdiv{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reviewsh2{
+    color: var(--color-secondary);
+    font-size: 50px;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.reviewsa{
+    color: var(--color-paragraph-text);
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 7px;
+}
+#reviewsvideo{
+    width: 50pc;
+    height: 30pc;
+    padding: 30px;
+}
+.watchreviews{
+    background-color: var(--color-primary);
+    padding: 8.5px 14px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    border: none;
+    margin-bottom: 35px;
+}
+.watchreviews:hover{
+    background-color: rgb(195, 160, 5);
+    transition: all 0.5s; 
+}
+.summaryreviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #ffffff83;
+    margin-bottom: 50px;
+    height: 10pc;
+}
+.students{
+    border-right: 0.5px solid rgba(148, 145, 145, 0.716);
+    height: 10pc;
+    padding: 30px 60px;
+    margin-left: 100px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.students h2{
+    color: var(--color-primary);
+    font-size: 50px;
+    font-weight: 700px;
+    text-align: center;
+    margin-right: 50px;
+}
+.students p{
+    color: var(--color-paragraph-text);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+.summaryreviews{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80pc;
+}
+.expertcoaches{
+    border-right: 0.5px solid rgba(148, 145, 145, 0.716);
+    height: 10pc;
+    padding: 30px 60px;
+    margin-left: 100px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.expertcoaches h2{
+    color: var(--color-primary);
+    font-size: 50px;
+    font-weight: 700px;
+    text-align: center;
+    margin-right: 50px;
+}
+.expertcoaches p{
+    color: var(--color-paragraph-text);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+.partners{
+    height: 10pc;
+    padding: 30px 60px;
+    margin-left: 100px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.partners h2{
+    color: var(--color-primary);
+    font-size: 50px;
+    font-weight: 700px;
+    text-align: center;
+    margin-right: 50px;
+}
+.partners p{
+    color: var(--color-paragraph-text);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+.conclusion{
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffffda;
+    padding: 60px 70px;
+}
+#conclusion h2{
+    color: var(--color-secondary);
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#conclusion p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: var(--color-paragraph-text);
+    unicode-bidi: isolate;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 32px;
+    padding: 0px 320px;
+    margin-bottom: 30px;
+}
+#conclusion button{
+    background-color: var(--color-primary);
+    padding: 12.5px 25px;
+    border-radius: 5px;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    margin-bottom: 35px;
+}
+#conclusion button:hover{
+    background-color: rgb(195, 160, 5);
+    transition: all 0.5s; 
+}
+footer{
+    background-color: var(--color-secondary);
+    display: flex;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+    justify-content: center;
+}
+footer{
+    display: block;
+}
+.footer1{
+    display: flex;
+}
+#footer_description{
+    margin-right: 10px; 
+}
+#footer_description img{
+    width: 130px;
+    height: 50px;
+    position: relative;
+    top: -40px;   
+}
+#footer_description h4{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    font-weight: 50;
+}
+#resources{
+    background-color: transparent;
+    width: 60pc;
+    line-height: 40px;
+    padding: 20px;
+    display: block;
+}
+#resources h2{
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -20px;
+}
+#resources a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+}
+#resources a:hover{
+    color: gold;
+    transition: all 0.2s;
+}
+#techskool{
+    background-color: transparent;
+    width: 60pc;
+    line-height: 40px;
+    padding: 20px;
+    display: block;
+}
+#techskool h2{
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -20px;
+}
+#techskool a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+}
+#techskool a:hover{
+    color: gold;
+    transition: all 0.2s;
+}
+#contactus{
+    background-color: transparent;
+    width: 60pc;
+    line-height: 40px;
+    padding: 20px;
+    display: block;
+}
+#contactus h2{
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -20px;
+}
+.contactus_img img{
+    width: 23px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.lala{
+    text-align: center;
+    margin: 50px;
+}
+.lala h2{
+    font-size: 23px;
+    font-weight: 200;
+}
+.lala h2 a{
+    font-weight: 300;
+    color: white;
+}
+.lala h2 a:hover{
+    color: rgb(233, 27, 27);
+    transition: all 0.3s;
+}
